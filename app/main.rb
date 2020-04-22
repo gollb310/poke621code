@@ -8,7 +8,7 @@ class Main
     words = content.split
     if(words[0] == "Congratulations")
       pokelength = words[7].length - 2
-      pokemon = words[7][0..pokelength]
+      pokemon = words[7].delete_suffix("!")
       command = "b!e621 " + pokemon
       bot.channel(targetChannelId).send_message(command)
     end
