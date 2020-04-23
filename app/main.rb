@@ -1,7 +1,7 @@
 class Main
   require 'discordrb'
 
-  bot = Discordrb::Bot.new token: '<Token>', client_id: 702596355066953848
+  bot = Discordrb::Bot.new token: '<Token>', client_id: 702750970723041371
   targetChannelId = 0
   bot.message(from: "Pokécord") do |event|
     content = event.content
